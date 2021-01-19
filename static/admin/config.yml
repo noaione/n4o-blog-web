@@ -4,19 +4,26 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/assets/img
 public_folder: /assets/img
+i18n:
+  structure: multiple_files
+  default_locale: id
+  locales: [en, id]
 collections:
   - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+    label: 'Postingan Baru'
+    folder: 'content/posts'
     create: true
-    slug: '{{slug}}/index.id.{{extension}}'
+    slug: '{{slug}}/index.{{locale}}{{extension}}'
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: "Tagline", name: "subtitle", widget: "string" }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: "Featured Image", name: "featuredImage", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list"}
+      - { label: "Judul", name: 'title', widget: 'string', i18n: true }
+      - { label: "Tanggal Publikasi", name: 'date', widget: 'datetime', i18n: "duplicate" }
+      - { label: "Update Publikasi", name: 'date', widget: 'datetime', i18n: "duplicate" }
+      - { label: "Deskripsi", name: 'description', widget: 'string', i18n: true }
+      - { label: "Tagline", name: "subtitle", widget: "string", i18n: true }
+      - { label: "Tagar", name: "tags", widget: "list", i18n: "duplicate" }
+      - { label: "Kategori", name: "categories", widget: "list", i18n: "duplicate" }
+      - { label: "Gambar", name: "featuredImage", widget: "image", i18n: "duplicate" }
+      - { label: "Isi", name: 'body', widget: 'markdown', i18n: true }
+      - { label: "lightgallery", name: "lightgallery", widget: "hidden", default: true, i18n: "duplicate" }
