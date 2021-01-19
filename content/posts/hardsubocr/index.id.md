@@ -22,7 +22,8 @@ Yang dibutuhin:
 - FFMpeg
 - YoloCR
 
-Silakan cek tutorial install vapoursynth di sini: [github](https://gist.github.com/noaione/6f8583c32a8f23e367688ebac0c9d0e0)
+Silakan ikuti instalasi Vapoursynth terlebih dahulu:
+{{< gist noaione 6f8583c32a8f23e367688ebac0c9d0e0 >}}
 
 ## Install YoloCR
 
