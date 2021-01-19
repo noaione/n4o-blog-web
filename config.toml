@@ -1,6 +1,6 @@
 baseURL = "https://blog.n4o.xyz/blog"
-defaultContentLanguage = "en"
-languageCode = "en-us"
+defaultContentLanguage = "id"
+languageCode = "id"
 theme = "uBlogger"
 
 title = "N4O Blog"
@@ -9,8 +9,70 @@ enableGitInfo = true
 enableEmoji = true
 
 [languages]
-    [language.en]
+    [languages.id]
         weight = 1
+        languageCode = "id"
+        languageName = "Indonesia"
+        hasCJKLanguage = false
+        paginate = 10
+
+        [languages.id.menu]
+            [[languages.id.menu.main]]
+                identifier = "posts"
+                pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
+                post = ""
+                name = "Postingan"
+                url = "posts/"
+                title = "Postingan"
+                weight = 1
+            [[languages.id.menu.main]]
+                identifier = "tags"
+                pre = "<i class='fas fa-hashtag fa-fw'></i>"
+                post = ""
+                name = "Tagar"
+                url = "tags/"
+                title = "Tagar"
+                weight = 2
+            [[languages.id.menu.main]]
+                identifier = "categories"
+                pre = "<i class='fas fa-book fa-fw'></i>"
+                post = ""
+                name = "Kategori"
+                url = "categories/"
+                title = "Kategori"
+                weight = 3
+            [[languages.id.menu.main]]
+                identifier = "about"
+                pre = "<i class='fas fa-user fa-fw'></i>"
+                post = ""
+                name = "Tentang"
+                url = "about/"
+                title = "Tentang"
+                weight = 4
+        [languages.id.params.home]
+            rss = 10
+            [languages.id.params.home.profile]
+                enable = true
+                gravatarEmail = "noaione0809@gmail.com"
+                avatarURL = "/images/avatar.png"
+                title = "N4O Blog"
+                subtitle = "Seseorang yang<s> melakukan fansubbing</s> jatuh ke Neraka VTuber."
+                typeit = true
+                social = true
+                disclaimer = ""
+            [languages.id.params.home.posts]
+                enable = true
+                paginate = 10
+        [languages.id.params.social]
+            GitHub = "noaione"
+            Twitter = "nao0809_"
+            Email = "noaione0809@gmail.com"
+            Steam = "N4O"
+            RSS = true
+            Trakteer = "noaione"
+
+    [languages.en]
+        weight = 2
         languageCode = "en"
         languageName = "English"
         hasCJKLanguage = false
@@ -19,7 +81,7 @@ enableEmoji = true
         [languages.en.menu]
             [[languages.en.menu.main]]
                 identifier = "posts"
-                pre = ""
+                pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
                 post = ""
                 name = "Posts"
                 url = "posts/"
@@ -27,20 +89,28 @@ enableEmoji = true
                 weight = 1
             [[languages.en.menu.main]]
                 identifier = "tags"
-                pre = ""
+                pre = "<i class='fas fa-hashtag fa-fw'></i>"
                 post = ""
                 name = "Tags"
                 url = "tags/"
                 title = "Tags"
                 weight = 2
             [[languages.en.menu.main]]
+                identifier = "categories"
+                pre = "<i class='fas fa-book fa-fw'></i>"
+                post = ""
+                name = "Categories"
+                url = "categories/"
+                title = "Categories"
+                weight = 3
+            [[languages.en.menu.main]]
                 identifier = "about"
-                pre = ""
+                pre = "<i class='fas fa-user fa-fw'></i>"
                 post = ""
                 name = "About"
                 url = "about/"
                 title = "About"
-                weight = 3
+                weight = 4
         [languages.en.params.home]
             # amount of RSS pages
             rss = 10
@@ -51,16 +121,11 @@ enableEmoji = true
                 avatarURL = "/images/avatar.png"
                 title = "N4O Blog"
                 subtitle = "Simple guy <s>doing fansubbing works</s> stuck in VTubers hell."
-                # whether to use typeit animation for subtitle
-                typeit = false
-                # whether to show social links
+                typeit = true
                 social = true
-                # disclaimer (HTML format is supported)
                 disclaimer = ""
-            # Home page posts
-                [languages.en.params.home.posts]
+            [languages.en.params.home.posts]
                 enable = true
-                # special amount of posts in each home posts page
                 paginate = 10
         [languages.en.params.social]
             GitHub = "noaione"
@@ -95,7 +160,14 @@ enableEmoji = true
         copyright = true
         author = true
         since = 2019
-
+    [params.search]
+        enable = true
+        type = "lunr"
+        contentLength = 4000
+        maxResultLength = 10
+        snippetLength = 30
+        highlightTag = "em"
+        absoluteURL = false
 [author]
     name = "n4o.en"
 

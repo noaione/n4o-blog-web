@@ -1,0 +1,192 @@
+# Indonesian Translation
+
+# == baseof ==
+[backToTop]
+other = "Kembali ke atas"
+
+[viewComments]
+other = "Lihat Komentar"
+# == baseof ==
+
+# === Post ===
+[posts]
+other = "Postingan"
+
+[navNext]
+other = "Artikel Selanjutnya"
+
+[navPrev]
+other = "Artikel Sebelumnya"
+# === Post ===
+
+# === Taxonomy ===
+[allSome]
+other = "Semua {{ .Some }}"
+
+[tag]
+other = "Tagar"
+
+[tags]
+other = "Tagar"
+
+[category]
+other = "Kategori"
+
+[categories]
+other = "Kategori"
+# === Taxonomy ===
+
+# === Pagination ===
+[more]
+other = "Lebih banyak"
+# === Pagination ===
+
+# === partials/header.html ===
+[selectLanguage]
+other = "Bahasa"
+
+[switchTheme]
+other = "Ubah tema"
+# === partials/header.html ===
+
+# === partials/footer.html ===
+[poweredBySome]
+other = "Diprakasai oleh {{ .Hugo }} | Tema - {{ .Theme }}"
+# === partials/footer.html ===
+
+# === partials/comment.html ===
+[valineLang]
+other = "id"
+
+[valinePlaceholder]
+other = "Komentarmu ..."
+
+[facebookLanguageCode]
+other = "id_ID"
+# === partials/comment.html ===
+
+# === partials/assets.html ===
+[search]
+other = "Cari"
+
+[searchPlaceholder]
+other = "Cari judul atau konten..."
+
+[clear]
+other = "Hapus"
+
+[cancel]
+other = "Batal"
+
+[noResultsFound]
+other = "Tidak ada hasil"
+
+[lunrLanguageCode]
+other = "id"
+
+[copyToClipboard]
+other = "Copy to clipboard"
+
+[cookieconsentMessage]
+other = "Blog ini menggunakan kuki untuk membuat pengalaman anda lebih enak"
+
+[cookieconsentDismiss]
+other = "Sip!"
+
+[cookieconsentLink]
+other = "Pelajari lebih lanjut"
+# === partials/assets.html ===
+
+# === partials/plugin/share.html ===
+[shareOn]
+other = "Taut ke"
+# === partials/plugin/share.html ===
+
+# === posts/single.html ===
+[contents]
+other = "Konten"
+
+[wordCount]
+one = "Satu kata"
+other = "{{ .Count }} kata"
+
+[readingTime]
+one = "Satu menit"
+other = "{{ .Count }} menit"
+
+[views]
+other = "views"
+
+[author]
+other = "Penulis"
+
+[updatedOnDate]
+other = "Diubah pada: {{ .Date }}"
+
+[readMarkdown]
+other = "Baca Markdown"
+
+[back]
+other = "Kembali"
+
+[home]
+other = "Laman Utama"
+
+# === posts/single.html ===
+
+# === 404.html ===
+[pageNotFound]
+other = "Laman tidak dapat ditemukan"
+
+[pageNotFoundText]
+other = "Laman yang anda cari tidak dapat ditemukan :("
+# === 404.html ===
+
+# === shortcodes/admonition.html ===
+[note]
+other = "Catatan"
+
+[abstract]
+other = "Abstrak"
+
+[info]
+other = "Info"
+
+[tip]
+other = "Tip"
+
+[success]
+other = "Sukses"
+
+[question]
+other = "Pertanyaan"
+
+[warning]
+other = "Hati-Hati"
+
+[failure]
+other = "Gagal"
+
+[danger]
+other = "Bahaya"
+
+[bug]
+other = "Bug"
+
+[example]
+other = "Contoh"
+
+[quote]
+other = "Kutipan"
+# === shortcodes/admonition.html ===
+
+# === shortcodes/version.html ===
+[new]
+other = "BARU"
+
+[changed]
+other = "DIUBAH"
+
+[deleted]
+other = "DIHAPUS"
+# === shortcodes/version.html ===
