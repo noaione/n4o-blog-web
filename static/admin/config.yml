@@ -6,8 +6,7 @@ media_folder: static/assets/img
 public_folder: /assets/img
 i18n:
   structure: multiple_files
-  default_locale: id
-  locales: [en, id]
+  locales: [id, en]
 collections:
   - name: 'blog'
     label: 'Postingan Baru'
@@ -15,15 +14,52 @@ collections:
     create: true
     slug: '{{slug}}/index.{{locale}}{{extension}}'
     editor:
-      preview: true
+      preview: false
+    i18n: true
     fields:
-      - { label: "Judul", name: 'title', widget: 'string', i18n: true }
-      - { label: "Tanggal Publikasi", name: 'date', widget: 'datetime', i18n: "duplicate" }
-      - { label: "Update Publikasi", name: 'date', widget: 'datetime', i18n: "duplicate" }
-      - { label: "Deskripsi", name: 'description', widget: 'string', i18n: true }
-      - { label: "Tagline", name: "subtitle", widget: "string", i18n: true }
-      - { label: "Tagar", name: "tags", widget: "list", i18n: "duplicate" }
-      - { label: "Kategori", name: "categories", widget: "list", i18n: "duplicate" }
-      - { label: "Gambar", name: "featuredImage", widget: "image", i18n: "duplicate" }
-      - { label: "Isi", name: 'body', widget: 'markdown', i18n: true }
-      - { label: "lightgallery", name: "lightgallery", widget: "hidden", default: true, i18n: "duplicate" }
+      - label: Judul
+        name: title
+        widget: string
+        i18n: translate
+      - label: 'Tanggal Publikasi'
+        name: date
+        widget: datetime
+        i18n: duplicate
+      - label: 'Update Publikasi'
+        name: lastmod
+        widget: datetime
+        i18n: duplicate
+      - label: Deskripsi
+        name: description
+        widget: string
+        required: false
+        i18n: translate
+      - label: Tagline
+        name: subtitle
+        widget: string
+        required: false
+        i18n: translate
+      - label: Tagar
+        name: tags
+        widget: list
+        i18n: true
+        required: false
+      - label: Kategori
+        name: categories
+        widget: list
+        i18n: true
+        required: false
+      - label: Gambar
+        name: featuredImage
+        widget: image
+        required: false
+        i18n: duplicate
+      - label: Isi
+        name: body
+        widget: markdown
+        i18n: translate
+      - label: lightgallery
+        name: lightgallery
+        widget: hidden
+        default: true
+        i18n: duplicate
