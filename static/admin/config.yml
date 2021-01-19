@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: noaione/n4o-blog-web
+  name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/assets/img
 public_folder: /assets/img
