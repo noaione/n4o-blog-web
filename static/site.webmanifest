@@ -15,6 +15,6 @@
     ],
     "theme_color": "#85c7ea",
     "background_color": "#85c7ea",
-    "start_url": "https://blog.n4o.xyz/blog",
+    "start_url": "https://blog.n4o.xyz/",
     "display": "standalone"
 }
