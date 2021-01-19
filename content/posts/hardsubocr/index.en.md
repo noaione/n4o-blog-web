@@ -8,6 +8,7 @@ subtitle: "Stealing your subtitle since 20th century"
 featuredImage: "/blog/assets/img/ocrhard/thumb.jpg"
 
 tags: ["fansub", "ripping", "tutorial"]
+categories: ["Fansubbing", "Ripping", "Tutorial"]
 
 lightgallery: true
 ---

@@ -8,6 +8,7 @@ subtitle: "Ripping from possibly one of the best Japanese VOD Website!"
 featuredImage: "/blog/assets/img/abemadl/thumb.png"
 
 tags: ["fansub", "ripping", "tutorial"]
+categories: ["Fansubbing", "Ripping", "Tutorial"]
 
 lightgallery: true
 ---

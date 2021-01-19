@@ -1,10 +1,12 @@
 ---
 weight: 4
 title: "Encoding: Memeresolution"
-description: "Memeres or not your fansub release in 2018+1"
+description: "Memeres atau tidak rilisan fansub anda di 2018+3"
+subtitle: "Memeres atau tidak rilisan fansub anda di 2018+3"
 date: 2019-01-20T14:56:00+07:00
 lastmod: 2021-01-19T13:41:00+07:00
 tags: ["fansub", "encoding"]
+categories: ["Fansubbing", "Encoding"]
 
 draft: false
 
