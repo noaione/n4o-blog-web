@@ -5,7 +5,7 @@ date: 2019-02-16T20:54:00+07:00
 lastmod: 2021-01-19T13:41:00+07:00
 description: "Mencuri video dari salah satu website VOD terbaik di Jepang!"
 subtitle: "Mencuri video dari salah satu website VOD terbaik di Jepang!"
-featuredImage: "/blog/assets/img/abemadl/thumb.png"
+featuredImage: "/assets/img/abemadl/thumb.png"
 
 tags: ["fansub", "ripping", "tutorial"]
 categories: ["Fansubbing", "Ripping", "Tutorial"]
@@ -31,17 +31,11 @@ Yang dibutuhin:
 
 Setelah beres install Python3.6, buka CMD dan arahkan ke folder favorit
 
-{% capture images %}
-	https://blog.n4o.xyz/blog/assets/img/abemadl/01.png
-{% endcapture %}
-{% include gallery images=images caption="" cols=1 %}
+{{< image src="/assets/img/abemadl/01.png" caption="Ganti direktori">}}
 
 Ketik `pip install yuu -U` dan tunggu
 
-{% capture images %}
-	https://blog.n4o.xyz/blog/assets/img/abemadl/02.png
-{% endcapture %}
-{% include gallery images=images caption="" cols=1 %}
+{{< image src="/assets/img/abemadl/02.png" caption="`pip install yuu -U`">}}
 
 Jika error `requests` not found atau yang sebagainya, ketik ini terlebih dahulu: `pip install requests[socks] tqdm pycryptodome m3u8`
 
@@ -49,10 +43,7 @@ Baru `pip install yuu -U`
 
 Setelah beres install yuu, silakan coba ketik `yuu -h` kira-kira muncul seperti ini
 
-{% capture images %}
-	https://blog.n4o.xyz/blog/assets/img/abemadl/03.png
-{% endcapture %}
-{% include gallery images=images caption="" cols=1 %}
+{{< image src="/assets/img/abemadl/03.png" caption="`yuu -h`">}}
 
 Aktifkan VPN Jepang atau gunakan proxy IP/URL, beberapa yang free bisa ditemukan di sini: [spys](http://spys.one/free-proxy-list/JP/).
 
@@ -93,12 +84,9 @@ Kalau mau ganti resolusi, gunakan `-r` seperti `-r 720p` (Resolusi yang tersedia
 
 Jika error `requests.exceptions.ProxyError` coba ganti VPN/Proxynya, atau error lain seperti `IndexError`.
 
-{% capture images %}
-	https://blog.n4o.xyz/blog/assets/img/abemadl/04a.png
-	https://blog.n4o.xyz/blog/assets/img/abemadl/04b.png
-	https://blog.n4o.xyz/blog/assets/img/abemadl/04c.png
-{% endcapture %}
-{% include gallery images=images caption="Proses download, beres download, dan hasil download" cols=3 %}
+{{< image src="/assets/img/abemadl/04a.png" caption="Proses download">}}
+{{< image src="/assets/img/abemadl/04b.png" caption="Beres download">}}
+{{< image src="/assets/img/abemadl/04c.png" caption="Hasil download">}}
 
 File sudah bisa di mux ke .mkv menggunakan mkvtoolnix atau ffmpeg.
 
@@ -106,21 +94,16 @@ Kalau error saat mux, buka CMD dan arahkan ke folder sebelumya (atau Shift+Right
 
 Lalu ketik ini: `ffmpeg -i input.ts -map 0:0 -map 0:1 -c copy output-fix.ts`, `input.ts` diubah sesuai file yang ada dan `output-fix.ts` bebas namanya mau apa, setelah itu baru di mux.
 
-{% capture images %}
-	https://blog.n4o.xyz/blog/assets/img/abemadl/05a.png
-	https://blog.n4o.xyz/blog/assets/img/abemadl/05b.png
-	https://blog.n4o.xyz/blog/assets/img/abemadl/05c.png
-{% endcapture %}
-{% include gallery images=images caption="Command, output, dan hasil yang sudah bener" cols=3 %}
+{{< image src="/assets/img/abemadl/05a.png" caption="Command">}}
+{{< image src="/assets/img/abemadl/05b.png" caption="Output">}}
+{{< image src="/assets/img/abemadl/05c.png" caption="Hasil yang sudah benar">}}
 
 *Silakan di coba*
 
 ## Note
 
-Silakan lapor masalah (menggunakan bahasa inggris) melalui: [GitHub Issue](https://github.com/noaione/yuu/issues)
-
+Silakan lapor masalah (menggunakan bahasa inggris) melalui: [GitHub Issue](https://github.com/noaione/yuu/issues)<br>
 Dan kalau bisa PR ya :))
 
-**Video yang jadi contoh di pos**: Yagate Kimi ni Naru Episode 01
-
+**Video yang jadi contoh di pos**: Yagate Kimi ni Naru Episode 01<br>
 **Video yang jadi contoh di gambar**: 1-Page no Koi Trailer

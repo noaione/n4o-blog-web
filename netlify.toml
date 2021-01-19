@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify --enableGitInfo -d ./public/blog"
+command = "hugo --gc --minify --enableGitInfo"
 
 [context.production.environment]
 HUGO_VERSION = "0.80.0"
@@ -9,3 +9,21 @@ HUGO_ENABLEGITINFO = "true"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+from = "/blog/*"
+to = "/posts/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/r/*"
+to = "https://shigoto.n4o.xyz/r/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/release/*"
+to = "https://shigoto.n4o.xyz/release/:splat"
+status = 301
+force = true

@@ -1,4 +1,4 @@
-baseURL = "https://blog.n4o.xyz/blog"
+baseURL = "https://blog.n4o.xyz"
 defaultContentLanguage = "id"
 languageCode = "id"
 theme = "uBlogger"
@@ -34,20 +34,20 @@ enableEmoji = true
                 title = "Tagar"
                 weight = 2
             [[languages.id.menu.main]]
-                identifier = "categories"
-                pre = "<i class='fas fa-book fa-fw'></i>"
-                post = ""
-                name = "Kategori"
-                url = "categories/"
-                title = "Kategori"
-                weight = 3
-            [[languages.id.menu.main]]
                 identifier = "about"
                 pre = "<i class='fas fa-user fa-fw'></i>"
                 post = ""
                 name = "Tentang"
                 url = "about/"
                 title = "Tentang"
+                weight = 3
+            [[languages.id.menu.main]]
+                identifier = ""
+                pre = "<i class='fas fa-tv fa-fw'></i>"
+                post = ""
+                name = "Rilisan"
+                url = "https://shigoto.n4o.xyz/"
+                title = "Rilisan"
                 weight = 4
         [languages.id.params.home]
             rss = 10
@@ -96,20 +96,20 @@ enableEmoji = true
                 title = "Tags"
                 weight = 2
             [[languages.en.menu.main]]
-                identifier = "categories"
-                pre = "<i class='fas fa-book fa-fw'></i>"
-                post = ""
-                name = "Categories"
-                url = "categories/"
-                title = "Categories"
-                weight = 3
-            [[languages.en.menu.main]]
                 identifier = "about"
                 pre = "<i class='fas fa-user fa-fw'></i>"
                 post = ""
                 name = "About"
                 url = "about/"
                 title = "About"
+                weight = 3
+            [[languages.en.menu.main]]
+                identifier = ""
+                pre = "<i class='fas fa-tv fa-fw'></i>"
+                post = ""
+                name = "Release"
+                url = "https://shigoto.n4o.xyz/"
+                title = "Release"
                 weight = 4
         [languages.en.params.home]
             # amount of RSS pages
@@ -139,7 +139,7 @@ enableEmoji = true
     version = "1.3.X"
     defaultTheme = "dark"
     gitRepo = "https://github.com/noaione/n4o-blog-web"
-    images = ["/blog/assets/img/logo.png"]
+    images = ["/assets/img/logo.png"]
     [params.analytics]
         enable = true
         [params.analytics.google]

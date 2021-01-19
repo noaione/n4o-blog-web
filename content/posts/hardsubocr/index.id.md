@@ -5,7 +5,7 @@ date: 2019-02-08T16:52:00+07:00
 lastmod: 2021-01-19T13:41:00+07:00
 description: "Mencuri takarir anda sejak abad ke-20"
 subtitle: "Mencuri takarir anda sejak abad ke-20"
-featuredImage: "/blog/assets/img/ocrhard/thumb.jpg"
+featuredImage: "/assets/img/ocrhard/thumb.jpg"
 
 tags: ["fansub", "ripping", "tutorial"]
 categories: ["Fansubbing", "Ripping", "Tutorial"]
@@ -59,13 +59,13 @@ Karena yang tak pake 720p ubah `DimensionCropBox=[1344,150]` sesuai resolusinya.
 
 `DimensionCropBox=[width,height]` jadi maksimal width adalah `1280` yang tak tulis adalah `[1100,150]`
 
-{{< image src="/blog/assets/img/ocrhard/01.png" caption="Atur cropping">}}
+{{< image src="/assets/img/ocrhard/01.png" caption="Atur cropping">}}
 
 Terlihat tidak pas sama sekali, jadi sekarang kita mainkan `HauteurCropBox=46`.
 
 Agar terlihat mendingan, ini tak ubah ke `HauteurCropBox=10`
 
-{{< image src="/blog/assets/img/ocrhard/02.png" caption="Atur cropping (2)">}}
+{{< image src="/assets/img/ocrhard/02.png" caption="Atur cropping (2)">}}
 
 Sudah pas sekarang?, tutup file lalu buka `YoloCR.vpy`
 
@@ -87,7 +87,7 @@ Jika file yang mau diubah berakhiran selain .mp4, ubah dengan ffmpeg: `ffmpeg -i
 
 Setelah itu ketik `for file in *.mp4; do filef="${file%.*}_filtered.mp4"; vspipe -y --arg FichierSource="$file" YoloCR.vpy - | ffmpeg -i - -c:v mpeg4 -qscale:v 3 -y "$filef"; ./YoloCR.sh "$filef"; done` dan tunggu sebentar
 
-{{< image src="/blog/assets/img/ocrhard/05.png" caption="Proses OCR">}}
+{{< image src="/assets/img/ocrhard/05.png" caption="Proses OCR">}}
 
 Jika sudah, selamat! sekarang waktunya buat versi yang ada di posisi atas.
 

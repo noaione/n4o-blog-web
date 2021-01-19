@@ -5,7 +5,7 @@ date: 2019-02-04T15:01:00+07:00
 lastmod: 2021-01-19T13:41:00+07:00
 description: "Lebih baik atau tidak?"
 subtitle: "Lebih baik atau tidak?"
-featuredImage: "/blog/assets/img/meme444/neuronactivation.png"
+featuredImage: "/assets/img/meme444/neuronactivation.png"
 
 tags: ["fansub", "encoding", "tutorial"]
 categories: ["Fansubbing", "Encoding", "Tutorial"]
@@ -37,26 +37,26 @@ Jadi kalau pake 4:2:0 alhasil chroma plane (U & V) akan di upscale ke 720p.
 
 **U Plane**
 
-{{< image src="/blog/assets/img/meme444/u420-360p.png" caption="4:2:0 U Plane (360p)">}}
-{{< image src="/blog/assets/img/meme444/u444-720p.png" caption="4:4:4 U Plane (720p)">}}
+{{< image src="/assets/img/meme444/u420-360p.png" caption="4:2:0 U Plane (360p)">}}
+{{< image src="/assets/img/meme444/u444-720p.png" caption="4:4:4 U Plane (720p)">}}
 
 **V Plane**
 
-{{< image src="/blog/assets/img/meme444/v420-360p.png" caption="4:2:0 V Plane (360p)">}}
-{{< image src="/blog/assets/img/meme444/v444-720p.png" caption="4:4:4 V Plane (720p)">}}
+{{< image src="/assets/img/meme444/v420-360p.png" caption="4:2:0 V Plane (360p)">}}
+{{< image src="/assets/img/meme444/v444-720p.png" caption="4:4:4 V Plane (720p)">}}
 
 ## Warna lebih detail
 Warna lebih detail 4:4:4 walaupun tidak seberapa, perbandingan tak sediakan di bawah.
 
 **U Plane**
 
-{{< image src="/blog/assets/img/meme444/u420-stats.png" caption="4:2:0 U Plane">}}
-{{< image src="/blog/assets/img/meme444/u444-stats.png" caption="4:4:4 U Plane">}}
+{{< image src="/assets/img/meme444/u420-stats.png" caption="4:2:0 U Plane">}}
+{{< image src="/assets/img/meme444/u444-stats.png" caption="4:4:4 U Plane">}}
 
 **V Plane**
 
-{{< image src="/blog/assets/img/meme444/v420-stats.png" caption="4:2:0 V Plane">}}
-{{< image src="/blog/assets/img/meme444/v444-stats.png" caption="4:4:4 V Plane">}}
+{{< image src="/assets/img/meme444/v420-stats.png" caption="4:2:0 V Plane">}}
+{{< image src="/assets/img/meme444/v444-stats.png" caption="4:4:4 V Plane">}}
 
 Kalau liat gambarnya, PlaneStatsMin menjadi lebih rendah di 4:4:4 dan PlaneStatsMax lebih tinggi di 4:4:4, Average hanyalah rata-rata atau median dari Min/Max frame tersebut.
 
@@ -75,13 +75,13 @@ x264-r2935-545de2f-naoLmod_x64.exe --output-depth 10 --profile highXXX --level 5
 
 **Untuk speed encode:**
 
-{{< image src="/blog/assets/img/meme444/444testcode.png" caption="444 Encode Speed">}}
-{{< image src="/blog/assets/img/meme444/420testcode.png" caption="420 Encode Speed">}}
+{{< image src="/assets/img/meme444/444testcode.png" caption="444 Encode Speed">}}
+{{< image src="/assets/img/meme444/420testcode.png" caption="420 Encode Speed">}}
 
 **Lalu untuk size sendiri:**
 
-{{< image src="/blog/assets/img/meme444/444mediainfo.png" caption="444 Size">}}
-{{< image src="/blog/assets/img/meme444/420mediainfo.png" caption="420 Size">}}
+{{< image src="/assets/img/meme444/444mediainfo.png" caption="444 Size">}}
+{{< image src="/assets/img/meme444/420mediainfo.png" caption="420 Size">}}
 
 **Kokkoku NCOP**:
 ```

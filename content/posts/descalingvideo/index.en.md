@@ -16,4 +16,4 @@ This page only available in Indonesian
 
 <!--more-->
 
-See here: [Indonesian Page](/blog/posts/descalingvideo)
+See here: [Indonesian Page](/posts/descalingvideo)

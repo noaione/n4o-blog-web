@@ -22,7 +22,7 @@ Fansub that I join and active:
 - Lokalsubs (Inactive)
 - Solo the shit out of everything (Also Inactive)
 
-You can find my release [here](https://blog.n4o.xyz/release)
+You can find my release [here](https://shigoto.n4o.xyz/release)
 
 You can find what shows that I do [here](https://git.io/fpKjh)
 

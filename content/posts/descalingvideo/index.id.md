@@ -43,7 +43,7 @@ import descale
 import MaskDetail as maskD
 ```
 
-{{< image src="/blog/assets/img/descale1.png" caption="Import script ke file manaria01descale.vpy">}}
+{{< image src="/assets/img/descale1.png" caption="Import script ke file manaria01descale.vpy">}}
 
 Selanjutnya import video yang ada dan buat outputnya dan coba klik `F5`
 
@@ -61,8 +61,8 @@ src = fvf.Depth(src, 16)
 src.set_output()
 ```
 
-{{< image src="/blog/assets/img/descale2.png" caption="Import video (src) + dithering ke 16bit">}}
-{{< image src="/blog/assets/img/descale3.png" caption="Output dari frameserver (F5)">}}
+{{< image src="/assets/img/descale2.png" caption="Import video (src) + dithering ke 16bit">}}
+{{< image src="/assets/img/descale3.png" caption="Output dari frameserver (F5)">}}
 
 Itu basic dari importing video dan sebagainya, sekarang kita mulai mencoba descaling.
 
@@ -86,8 +86,8 @@ v = descale.Debicubic(src, width=1440, height=810, b=1/3, c=1/3, yuv444=True)
 v.set_output()
 ```
 
-{{< image src="/blog/assets/img/manaria01-1080p.png" caption="Source 1080p">}}
-{{< image src="/blog/assets/img/manaria01-810p.png" caption="Descaled 810p">}}
+{{< image src="/assets/img/manaria01-1080p.png" caption="Source 1080p">}}
+{{< image src="/assets/img/manaria01-810p.png" caption="Descaled 810p">}}
 
 Silakan gambarnya di buka di Tab baru agar lebih enak.
 
@@ -95,7 +95,7 @@ Selesai sudah, cukup segitu aja kalo emang cuma mau descaling video, gak ribet g
 
 Tapi kadang descaling gak bekerja dengan baik karena studio animasi suka nempel 1080p overlay (teks credit, dsb.) ke resolusi aslinya, jadi semua overlay 1080p pasti ancur.
 
-{{< image src="/blog/assets/img/manaria01-810pbroken.png" caption="Zoom in ke teks jepang, bisa diliat ada artifact halo/ringing">}}
+{{< image src="/assets/img/manaria01-810pbroken.png" caption="Zoom in ke teks jepang, bisa diliat ada artifact halo/ringing">}}
 
 Ada satu cara menghilangkannya, yaitu pake **MaskDetail**.
 
@@ -119,4 +119,4 @@ resizer = core.resize.Bicubic(src, width=1440, height=810, format=vs.YUV444P16) 
 mask.set_output()
 ```
 
-{{< image src="/blog/assets/img/manaria01-810pmask.png" caption="Hasil mask">}}
+{{< image src="/assets/img/manaria01-810pmask.png" caption="Hasil mask">}}
