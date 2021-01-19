@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   repo: noaione/n4o-blog-web
   branch: master # Branch to update (optional; defaults to master)
+  identity_url: "//n4oblog.netlify.com/.netlify/identity"
+  gateway_url: "//n4oblog.netlify.com/.netlify/git"
+  large_media_url: "//n4oblog.netlify.com/.netlify/large-media"
 media_folder: static/assets/img
 public_folder: /assets/img
 publish_mode: editorial_workflow
