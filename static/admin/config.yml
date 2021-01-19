@@ -10,7 +10,7 @@ i18n:
   structure: multiple_files
   locales: [id, en]
 collections:
-  - name: 'blog'
+  - name: 'posts'
     label: 'Postingan Baru'
     folder: 'content/posts'
     create: true
