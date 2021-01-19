@@ -4,6 +4,8 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/assets/img
 public_folder: /assets/img
+publish_mode: editorial_workflow
+site_url: https://blog.n4o.xyz/blog
 i18n:
   structure: multiple_files
   locales: [id, en]
