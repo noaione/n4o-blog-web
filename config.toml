@@ -1,3 +1,122 @@
-baseURL = "http://example.org/"
+baseURL = "https://blog.n4o.xyz/blog"
+defaultContentLanguage = "en"
 languageCode = "en-us"
-title = "My New Hugo Site"
+theme = "uBlogger"
+
+title = "N4O Blog"
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+
+[languages]
+    [language.en]
+        weight = 1
+        languageCode = "en"
+        languageName = "English"
+        hasCJKLanguage = false
+        paginate = 10
+
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                identifier = "posts"
+                pre = ""
+                post = ""
+                name = "Posts"
+                url = "posts/"
+                title = "Posts"
+                weight = 1
+            [[languages.en.menu.main]]
+                identifier = "tags"
+                pre = ""
+                post = ""
+                name = "Tags"
+                url = "tags/"
+                title = "Tags"
+                weight = 2
+            [[languages.en.menu.main]]
+                identifier = "about"
+                pre = ""
+                post = ""
+                name = "About"
+                url = "about/"
+                title = "About"
+                weight = 3
+        [languages.en.params.home]
+            # amount of RSS pages
+            rss = 10
+            # Home page profile
+            [languages.en.params.home.profile]
+                enable = true
+                gravatarEmail = "noaione0809@gmail.com"
+                avatarURL = "/images/avatar.png"
+                title = "N4O Blog"
+                subtitle = "Simple guy <s>doing fansubbing works</s> stuck in VTubers hell."
+                # whether to use typeit animation for subtitle
+                typeit = false
+                # whether to show social links
+                social = true
+                # disclaimer (HTML format is supported)
+                disclaimer = ""
+            # Home page posts
+                [languages.en.params.home.posts]
+                enable = true
+                # special amount of posts in each home posts page
+                paginate = 10
+        [languages.en.params.social]
+            GitHub = "noaione"
+            Twitter = "nao0809_"
+            Email = "noaione0809@gmail.com"
+            Steam = "N4O"
+            RSS = true
+            Trakteer = "noaione"
+
+[params]
+    version = "1.3.X"
+    defaultTheme = "dark"
+    gitRepo = "https://github.com/noaione/n4o-blog-web"
+    images = ["/blog/assets/img/logo.png"]
+    [params.analytics]
+        enable = true
+        [params.analytics.google]
+            anonymizeIP = true
+    [params.page.share]
+        enable = false
+    [params.page.code]
+        copy = true
+    [params.comment]
+        enable = true
+        [params.comment.disqus]
+            enable = true
+            shortname = "n4oblog"
+    [params.footer]
+        enable = true
+        custom = "Blog designed with uBlogger theme<br>Every post here is written personally by N4O"
+        hugo = false
+        copyright = true
+        author = true
+        since = 2019
+
+[author]
+    name = "n4o.en"
+
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = true
+        lineNumbersInTable = true
+        noClasses = false
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = true
+        [markup.goldmark.renderer]
+            unsafe = true
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
