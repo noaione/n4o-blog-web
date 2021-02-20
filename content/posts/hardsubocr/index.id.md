@@ -6,6 +6,7 @@ lastmod: 2021-01-19T13:41:00+07:00
 description: "Mencuri takarir anda sejak abad ke-20"
 subtitle: "Mencuri takarir anda sejak abad ke-20"
 featuredImage: "/assets/img/ocrhard/thumb.jpg"
+images: ["/assets/img/ocrhard/thumb.jpg"]
 
 tags: ["fansub", "ripping", "tutorial"]
 categories: ["Fansubbing", "Ripping", "Tutorial"]

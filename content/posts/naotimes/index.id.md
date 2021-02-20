@@ -7,6 +7,7 @@ date: 2019-03-24T19:42:00+07:00
 lastmod: 2021-01-19T16:37:00+07:00
 tags: ["fansub", "discord", "bot"]
 featuredImage: "https://naoti.me/assets/img/nt512.png"
+images: ["https://naoti.me/assets/img/nt512.png"]
 categories: ["Fansubbing", "Bot"]
 
 draft: false

@@ -6,6 +6,7 @@ lastmod: 2021-01-19T13:41:00+07:00
 description: "Mencuri video dari salah satu website VOD terbaik di Jepang!"
 subtitle: "Mencuri video dari salah satu website VOD terbaik di Jepang!"
 featuredImage: "/assets/img/abemadl/thumb.png"
+images: ["/assets/img/abemadl/thumb.png"]
 
 tags: ["fansub", "ripping", "tutorial"]
 categories: ["Fansubbing", "Ripping", "Tutorial"]

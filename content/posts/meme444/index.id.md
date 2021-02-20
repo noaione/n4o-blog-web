@@ -6,6 +6,7 @@ lastmod: 2021-01-19T13:41:00+07:00
 description: "Lebih baik atau tidak?"
 subtitle: "Lebih baik atau tidak?"
 featuredImage: "/assets/img/meme444/neuronactivation.png"
+images: ["/assets/img/meme444/neuronactivation.png"]
 
 tags: ["fansub", "encoding", "tutorial"]
 categories: ["Fansubbing", "Encoding", "Tutorial"]

@@ -139,7 +139,9 @@ enableEmoji = true
     version = "1.3.X"
     defaultTheme = "dark"
     gitRepo = "https://github.com/noaione/n4o-blog-web"
-    images = ["/assets/img/logo.png"]
+    images = ["/assets/logo.png"]
+    title = "N4O Blog"
+    description = "Simple guy ~~doing fansubbing works~~ stuck in VTubers hell."
     [params.analytics]
         enable = true
         [params.analytics.google]
