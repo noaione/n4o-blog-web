@@ -4,6 +4,7 @@ date: 2021-01-19T13:00:00+07:00
 draft: false
 
 lightgallery: true
+disableComment: true
 ---
 
 <center>Hanyalah seorang manusia yang hobi<s> fansubbing</s> nonton VTubers.</center><br>

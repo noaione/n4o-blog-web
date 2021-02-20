@@ -4,6 +4,7 @@ date: 2021-01-19T13:00:00+07:00
 draft: false
 
 lightgallery: true
+disableComment: true
 ---
 
 <center>Someone that wasting his time to <s>do fansubbing</s> watch VTubers.</center>
