@@ -67,10 +67,10 @@ Size mungkin bervariasi pada encode masing-masing, cuma dengan melakukan test en
 
 Berikut settingan encodenya, perubahan hanya terdapat pada `--output-csp`, `--profile` dan `--8x8dct`
 
-XXX untuk profile adalah `444` dan `10`. XXXX untuk output-csp adalah `i444` dan `i420`
+YYY untuk profile adalah `444` dan `10`. YYYY untuk output-csp adalah `i444` dan `i420`
 
 ```bat
-x264-r2935-545de2f-naoLmod_x64.exe --output-depth 10 --profile highXXX --level 5.0 --preset veryslow --subme 10 --me umh --tune animation --crf 18 --deblock -1:-1 --rc-lookahead 60 --keyint 250 --bframes 16 --ref 16 --qcomp 0.75 --aq-strength 0.85 --merange 32 --psy-rd 0.80:0.05 --output-csp XXXX --colormatrix bt709 --aq-mode 3 --chroma-qp-offset -5 --fade-compensate 0.80 --no-fast-pskip --output "premuxbd_%~n1.264" "%~n1%~x1"
+x264-r2935-545de2f-naoLmod_x64.exe --output-depth 10 --profile highYYY --level 5.0 --preset veryslow --subme 10 --me umh --tune animation --crf 18 --deblock -1:-1 --rc-lookahead 60 --keyint 250 --bframes 16 --ref 16 --qcomp 0.75 --aq-strength 0.85 --merange 32 --psy-rd 0.80:0.05 --output-csp YYYY --colormatrix bt709 --aq-mode 3 --chroma-qp-offset -5 --fade-compensate 0.80 --no-fast-pskip --output "premuxbd_%~n1.264" "%~n1%~x1"
 ```
 
 **Untuk speed encode:**
