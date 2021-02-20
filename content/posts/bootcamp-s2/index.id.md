@@ -181,10 +181,7 @@ Mempermudah membedakan code didalam bracket.
 
 Link Instalasi: [CoenraadS.bracket-pair-colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
-{% capture images %}
-	https://p.ihateani.me/nhwysqem.png
-{% endcapture %}
-{% include gallery images=images caption="Extension 05" cols=1 %}
+{{< image src="https://p.ihateani.me/nhwysqem.png" caption="Extension 05">}}
 
 #### 6. Polacode {#vscode-ext-polacode}
 
@@ -192,10 +189,7 @@ Membuat screenshot code yang dibuat. (Dokumentasi)
 
 Link Instalasi: [pnp.polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
-{% capture images %}
-	https://p.ihateani.me/bykdqhqx.png
-{% endcapture %}
-{% include gallery images=images caption="Extension 06" cols=1 %}
+{{< image src="https://p.ihateani.me/bykdqhqx.png" caption="Extension 06">}}
 
 #### 7. GitLens — Git supercharged {#vscode-ext-gitlens}
 
@@ -203,10 +197,7 @@ Extension terbaik untuk Integrasi Git(Hub/Lab).
 
 Link Instalasi: [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
-{% capture images %}
-	https://p.ihateani.me/pasjvpfa.png
-{% endcapture %}
-{% include gallery images=images caption="Extension 07" cols=1 %}
+{{< image src="https://p.ihateani.me/pasjvpfa.png" caption="Extension 07">}}
 
 #### 8. vscode-icons {#vscode-ext-vsicons}
 
@@ -214,7 +205,297 @@ Menambahkan Icon untuk extension File dengan tema yang ada.
 
 Link Instalasi: [vscode-icons-team.vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
-{% capture images %}
-	https://p.ihateani.me/uuynlpsb.png
-{% endcapture %}
-{% include gallery images=images caption="Extension 08" cols=1 %}
+{{< image src="https://p.ihateani.me/uuynlpsb.png" caption="Extension 08">}}
+
+## Run code di WSL+VSCode {#vscode-coderun}
+
+Pastikan [VSCode telah terhubung dengan WSL](#vscode-wsl)<br>
+Dan pastikan telah menginstall [extension Code Runner](#vscode-ext-crun).
+
+Biar mempermudah, bisa membuat folder baru di bagian direktori Home WSL `(~/)`.
+
+Cara membuat folder baru adalah:
+```bash
+mkdir namaFolder
+```
+Jalankan code tersebut di WSL.
+
+{{< image src="https://p.ihateani.me/mtqorces.gif" caption="Membuat folder baru">}}
+
+Di VSCode, connect ke WSL dan pilih `Open Folder`, lalu silakan buat file baru di folder tersebut. (misalkan `helloworld.cpp`)
+
+```cpp
+#include <stdio.h>
+
+int main() {
+	puts("Hello world!");
+	return 0;
+}
+```
+
+Save filenya, dan klik tombol Play di pojok kanan atas (Akan ada jika sudah menginstall [extension Code Runner](#vscode-ext-crun)).<br>
+Jika codenya sukses di run, selamat WSL dan VSCode sudah benar-benar siap dipakai!
+
+{{< admonition type=info title="Note" open=true >}}
+Disarankan menaruh code yang ingin di run di folder WSL.<br>
+Dikarenkan WSL tidak support `cd` (change directory) ke folder windows.
+{{< /admonition >}}
+
+{{< image src="https://p.ihateani.me/qpkhfswk.gif" caption="Run Code @ WSL">}}
+
+## Git Integrations {#vscode-git}
+
+*Git is hard...*
+
+### Preparasi {#vscode-git-preface}
+
+Mari buat akun baru di GitHub jika belum: [Sign Up](https://github.com/join).
+
+Jika sudah, mari buat Repository baru di GitHub!
+
+Buka halaman utama [GitHub](https://github.com) dan klik tanda `+` di pojok kanan atas, lalu klik `New Repository`<br>
+Isi `Repository Name` bebas mau kayak gimana, isi `Description` jika mau.<br>
+Disarankan memilih `Public` untuk visibility.
+
+Setelah itu klik `Create repository`, repo baru telah siap!
+
+**Video tutorial:**<br>
+{{< videojs url="https://p.ihateani.me/uzomrkrx.mp4" >}}
+
+#### Konfigurasi Git {#git-config}
+
+Sebelum memulai project, buka WSL terlebih dahulu.<br>
+Kita harus atur config untuk email dan user, caranya:
+```bash
+git config --global user.name "USERNAME GITHUB"
+git config --global user.email "email@provider.tld"
+```
+Jalankan kedua command tersebut di WSL.
+
+{{< admonition type=info title="Note" open=true >}}
+Gunakan username github dan email yang dipake di github.
+{{< /admonition >}}
+
+{{< image src="https://p.ihateani.me/asqjkyxf.gif" caption="Config git">}}
+
+Saatnya memulai project!, jika sudah ada folder bisa langsung ke [Sudah ada Folder](#vscode-git-fd-exists)<br>
+Jika belum silakan ke [Tidak ada Folder](#vscode-git-clone)
+
+{{< admonition type=warning title="Saran!" open=true >}}
+**Disarankan jangan membuat folder terlebih dahulu untuk mempermudah**
+{{< /admonition >}}
+
+### Git Integrations - Remote Add {#vscode-git-fd-exists}
+
+Jika folder yang dibuat ada di Windows, silakan ke [Tidak ada Folder](#vscode-git-clone).<br>
+Folder harus berada di direktori WSL. (ex: `/home/USERNAME/bootcamp-s2/`)
+
+Pertama, connect ke WSL terlebih dahulu.<br>
+Lalu, pilih `Open Folder` dan buka folder yang dipakai (ex: `/home/USERNAME/bootcamp-s2/`)
+
+Pilih `Source Control` di sidebar kiri atau pencet `CTRL+SHIFT+G`.<br>
+Klik `Initialize Repository`<br>
+Klik `…` -> `Remote` -> `Add Remote`.
+
+Di sini bisa kita provide clone URL HTTPS atau `Add remote from GitHub`, disarankan pilih `Add remote from GitHub`.
+
+Jika belum pernah terhubung dengan GitHub akan muncul pop-up message, klik `Allow`.
+
+VSCode lalu akan berusaha menghubungkan VSCode dengan GitHub, silakan ikuti petunjuk di browser (Continue -> Authorize github -> Masukan password -> Open in Visual Studio Code)<br>
+Di VSCode lalu klik `Open` untuk menyelesaikan proses OAuth. Silakan tunggu sebentar selagi repository sedang di load.
+
+Lalu pilih repository yang sudah dibuat sebelumnya, masukan `origin` sebagai `Remote Name`.
+
+GitHub telah sukses terhubung dengan project VSCode.
+
+**Note** Jika repo tersebut sudah ada Isinya, silakan ikuti langkah [Remote Add (Checkout)](#vscode-git-fd-checkout)
+
+**Instruksi dalam bentuk Video**:
+{{< videojs url="https://p.ihateani.me/wdlxsjjq.mp4" >}}
+
+#### Git Integrations - Remote Add (Checkout) {#vscode-git-fd-checkout}
+
+Jika Repository yang ditambah ada isinya, silakan ikuti langka ini, jika tidak bisa loncat ke [Git - Commit/Push/Pull](#git-hell)
+
+Setelah menambahkan remote di langkah atas, buka `Source Control`<br>
+Klik `…` -> `Pull, Push` -> `Fetch`.
+
+VSCode akan mengambil seluruh informasi dari GitHub dan menyimpannya di local disk kita.
+
+Selanjutnya klik `…` -> `Checkout to`.
+
+Akan muncul beberapa pilihan, silakan pilih `origin/master`.<br>
+Folder akan terisi dengan file yang ada di GitHub.
+
+**Instruksi dalam bentuk Video**:
+{{< videojs url="https://p.ihateani.me/qitwmtob.mp4" >}}
+
+### Git Integrations - Remote Clone {#vscode-git-clone}
+
+Pertama, connect ke WSL terlebih dahulu.<br>
+Lalu, pilih `Clone Repository`.
+
+Copy link clone repository, format URL repository git adalah:
+```
+https://github.com/USERNAME/REPONAME.git
+```
+
+Contohnya: `https://github.com/noaione/code-bootcamp-s2.git`
+
+{{< admonition type=info title="Note" open=true >}}
+Jika repository itu bersifat Private, tambahkan Username dan Password akun ke URL repository.<br>
+Formatnya jadi: `https://USERNAME:PASSWORD@github.com/USERNAME/REPONAME.git`
+{{< /admonition >}}
+
+Jika repo tidak ada apa-apa dan ada teks `Quick setup`, copy link yang disediakan.<br>
+Jika repo sudah ada isi klik tombol `Clone or Download` yang berwarna hijau dan klik tombol copy di kolom `Clone with HTTPS`.
+
+Kembali ke VSCode, masukan url tersebut dan enter.<br>
+Pilih kemana folder akan di clone (saran: `/home/USERNAME`) lalu klik `OK`.
+
+Silakan tunggu, dan jika ada notifikasi `Would you like to open cloned repository?`<br>
+klik `Open`.
+
+GitHub telah sukses terhubung dengan project VSCode.
+
+**Instruksi dalam bentuk Video**:
+{{< videojs url="https://p.ihateani.me/zxoleuzs.mp4" >}}
+
+## Git - Commit/Push/Pull {#git-hell}
+
+Dibagian ini, kita akan sedikit belajar tentang Commit, Push, dan Pull serta mengatasi File Conflict.
+
+Sebelum kita mulai commit-commit ke repo, disarankan kita setup file `.gitignore`, file ini berguna agar tidak ada "sampah" yang ikutan ke commit/push ke remote repository.
+
+### .gitignore File {#git-ignore}
+
+Silakan buka website ini: [gitignore.io](https://www.toptal.com/developers/gitignore)
+
+Di kolom pencarian, ketik `C` lalu `C++` lalu `Code`.<br>
+Ketiga itu akan generate file .gitignore untuk bahasa C, C++ serta IDE VSCode.
+
+Lalu klik Create.
+
+Copy hasilnya, lalu buat file `.gitignore` dan paste lalu save.
+
+**Instruksi dalam bentuk Video**:
+{{< videojs url="https://p.ihateani.me/jwecruts.mp4" >}}
+
+### Commit Changes {#git-commit}
+
+Sebelum kita bisa menambah file baru maupun modifikasi ke Repo Github kita, kita harus melakukan: stage changes, commit lalu push.
+
+Dibagian ini, akan dijelaskan gimana cara Stage Changes dan Commit.
+
+Pertama klik `Source Control` lalu pilih file yang ingin di Stage dengan klik tanda `+` di samping nama file. Atau jika ingin semuanya, bisa klik Tanda `+` di sebelah teks `Changes`.
+
+Lalu klik `✓` di bagian Source Control, isi "Message"-nya, disarankan messagenya sesuai dengan apa yang diubah biar mudah diingat.
+
+Setelah itu cukup Enter, dan Perubahanmu telah di commit dan siap untuk di Push.
+
+{{< image src="https://p.ihateani.me/zpzcdvck.gif" caption="Commit changes">}}
+
+### Push Changes {#git-push}
+
+Jika sudah membuat commit baru, kita tinggal melakukan yang namanya Push, yaitu "mendorong" perubahan menuju remote repository.
+
+Pertama klik `Source Control` lalu klik `...` di sebelah teks `Source Control`, dan klik Push.
+
+Sudah, hanya seperti itu, perubahan telah masuk ke GitHub.
+
+{{< image src="https://p.ihateani.me/tbgmtidf.gif" caption="Push Changes">}}
+
+### Pull Changes {#git-pull}
+
+Ternyata projek kita lakukan dikerjakan bersama kolaborator lain?!, dan ketika kita ingin Push Changes kita, ada error message.
+
+{{< image src="https://p.ihateani.me/mexnhtvp.png" caption="Push Error">}}
+
+Cara membenarkannya lumayan simpel, cukup Pull Changes saja atau menarik perubahan dari Remote Repo ke Local Repo.
+
+Pertama klik `Source Control` lalu klik `...` di sebelah teks `Source Control`, dan klik Pull.
+
+Semua perubahan dari Remote repo akan masuk ke Local repo, dan situ bisa lanjut Push Changes situ.
+
+{{< image src="https://p.ihateani.me/xrvsisul.gif" caption="Pull Changes">}}
+
+### Merge Conflicting Changes {#git-conflict-hell}
+
+Ternyata, pas situ Pull Changes kolaborator rlain dan situ mengubah line yang sama dan muncul error ketika Pull Changes.
+
+Sabar dulu, cara benerinnya agak sulit karena kita harus memilih mana yang ingin kita simpan dan yang tidak.
+
+Jika muncul error `Please clean your changes` atau semacamnya.<br>
+Silakan commit semua perubahan terlebih dahulu baru Pull Changes.
+
+{{< image src="https://p.ihateani.me/cluzjbfo.gif" caption="Pull Error #1">}}
+
+Setelah Pull Changes, ternyata ada Merge Conflict.
+
+{{< image src="https://p.ihateani.me/cntmfean.png" caption="Pull Merge Conflicts">}}
+
+Git sendiri bisa mengabungkan perubahan otomatis, tapi jika tidak bisa, maka git akan menandakannya dengan
+
+```diff
+<<<<<<< HEAD
+	perubahan dari kita
+=======
+	perubahan dari remote/pull
+>>>>>>> commit ID
+```
+
+Di VSCode, situ akan mendapatkan highlighting otomatis, dengan 2 warna. `Hijau` untuk Commit kita, `Biru` untuk Commit dari Repo.
+
+Dan kita akan mendapatkan beberapa tombol, yaitu:
+- Accept Current Change<br>
+	Gunakan perubahan kita.
+- Accept Incoming Change<br>
+	Gunakan perubahaan dari Pull Changes
+- Accept Both Changes<br>
+	Gunakan kedua perubahan (Perubahan kita diatas, perubahan dari Remote dibawahnya)
+- Compare Changes<br>
+	Membuka window baru untuk membandingkan perubahan.
+
+Situ bebas mau memilih yang mana, silakan diskusikan sendiri, jika sudah silakan Commit perubahan tersebut dan silakan Push jika mau.
+
+**Contoh dalam bentuk Video**:
+{{< videojs url="https://p.ihateani.me/vdnbjhsp.mp4" >}}
+
+Jika kita menggunakan contoh ini:
+```diff
+<<<<<<< HEAD
+	perubahan dari kita
+=======
+	perubahan dari remote/pull
+>>>>>>> commit ID
+```
+
+Jika kita klik `Accept Current Change` maka akan menjadi
+```
+	perubahan dari kita
+```
+
+Jika kita klik `Accept Incoming Change` maka akan menjadi
+```
+	perubahan dari remote/pull
+```
+
+Jika kita klik `Accept Both Changes` maka akan menjadi
+```
+	perubahan dari kita
+	perubahan dari remote/pull
+```
+
+## Penutup {#godhelpmeimtiredwritingthisanduploadingittomycdn}
+Close halaman ini dan kembalilah ngoding.<br>
+Jika ada masalah (atau kurang ngerti) bisa kontak/mention **N4O#8868** di Discord.
+
+**Hal yang mungkin berguna**:<br>
+**Belajar git lebih lanjut**: [Git for dummies](https://medium.com/@yoyomade/github-for-dummies-96f753f96a59) [link provided by `code wizard`]<br>
+**Akses folder WSL**: Ketik `\\wsl$` di File Explorer.<br>
+**Pemandangan alam**: [Klik](https://duckduckgo.com/?q=pemandangan+alam&t=h_&iax=images&ia=images) biar segar dikit matanya ~~(karena gk akan bertemu dunia luar untuk waktu yang lama)~~
+
+**Referensi**:
+1. `#announcement` channel di Server
+2. [brew.sh](http://brew.sh/)
+3. Pengalaman pribadi.
