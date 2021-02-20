@@ -11,7 +11,6 @@ tags: ["tutorial", "coding"]
 categories: ["Tutorial", "Coding"]
 
 lightgallery: true
-enableVideoJS: true
 ---
 
 <i>Ditulis sebagai tambahan untuk postingan Bootcamp</i>
