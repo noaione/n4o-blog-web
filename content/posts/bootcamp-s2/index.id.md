@@ -33,6 +33,10 @@ Silakan Ikuti **Step 1 dan** langsung lompat ke **Step 6-7.**<br>
 Jika situ menggunakan Windows 10 2004, bisa ikuti Step 2-5 kalau mau tapi tidak tak rekomendasikan untuk sekarang.
 {{< /admonition >}}
 
+{{< admonition type=info title="Jika tidak bisa install via MS Store" open=true >}}
+Ikuti cara install melalui LxRunOffline di sini: [WSL dengan LxRunOffline](/posts/lxrunoffline)
+{{< /admonition >}}
+
 Jika sudah muncul kurang lebih seperti ini, WSL siap dipakai
 {{< image src="/assets/img/bootcamps2/wsl_ready.png" caption="WSL Ready">}}
 
