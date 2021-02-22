@@ -142,6 +142,9 @@ enableEmoji = true
     images = ["/assets/logo.png"]
     title = "N4O Blog"
     description = "Simple guy ~~doing fansubbing works~~ stuck in VTubers hell."
+    enableRobotsTXT = true
+    enableGitInfo = true
+    enableEmoji = true
     [params.analytics]
         enable = true
         [params.analytics.google]
@@ -157,7 +160,7 @@ enableEmoji = true
             shortname = "n4oblog"
     [params.footer]
         enable = true
-        custom = "Blog designed with uBlogger theme<br>Every post here is written personally by N4O"
+        custom = "Blog designed with <a href='https://github.com/noaione/uBlogger'>modified uBlogger theme</a><br>Every post here is written personally by N4O<br>"
         hugo = false
         copyright = true
         author = true
