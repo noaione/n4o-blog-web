@@ -16,6 +16,9 @@ lightgallery: true
 
 This page only available in Indonesian
 
+**Tools Repository**:<br />
+{{< repo username="noaione" repo="yuu" >}}
+
 <!--more-->
 
 See here: [Indonesian Page](/posts/abemadl)

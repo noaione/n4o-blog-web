@@ -28,6 +28,9 @@ Yang dibutuhin:
 
 **Download FFMpeg Static dan taruh file `ffmpeg.exe` ke `C:\Windows`**
 
+**Tools Repository**:<br />
+{{< repo username="noaione" repo="yuu" >}}
+
 ## Langkah-Langkah 
 
 Setelah beres install Python3.6, buka CMD dan arahkan ke folder favorit
