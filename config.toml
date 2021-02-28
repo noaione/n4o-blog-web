@@ -148,7 +148,7 @@ enableEmoji = true
     [params.analytics]
         enable = true
         [params.analytics.google]
-            id = UA-90117853-1
+            id = "UA-90117853-1"
             anonymizeIP = true
     [params.page.share]
         enable = false
