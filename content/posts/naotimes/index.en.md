@@ -31,3 +31,7 @@ Current bot are being run on private server located in German
 ## Invite
 
 https://naoti.me/invite
+
+## Source Code
+
+{{< repo username="noaione" repo="naoTimes" >}}
