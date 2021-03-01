@@ -1,0 +1,11 @@
+{{- if .IsNamedParams -}}
+    {{- if .Get "name" -}}
+        {{ $name := .Get "name" }}
+        {{- range .Site.Data.discordemote -}}
+            {{ $item := . }}
+            {{- if eq $item.name $name -}}
+                <img src="{{ $item.url }}" height="25" alt=":{{ $item.name }}:" title=":{{ $item.name }}:">
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
