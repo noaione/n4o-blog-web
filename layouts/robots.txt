@@ -41,6 +41,9 @@ Disallow: /
 User-agent: Turnitin Robot
 Disallow: /
 
+User-agent: TurnitinBot
+Disallow: /
+
 # Block Heritrix
 User-agent: Heritrix
 Disallow: /
