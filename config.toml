@@ -19,32 +19,24 @@ enableEmoji = true
         [languages.id.menu]
             [[languages.id.menu.main]]
                 identifier = "posts"
-                pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
-                post = ""
                 name = "Postingan"
                 url = "posts/"
                 title = "Postingan"
                 weight = 1
             [[languages.id.menu.main]]
                 identifier = "tags"
-                pre = "<i class='fas fa-hashtag fa-fw'></i>"
-                post = ""
                 name = "Tagar"
                 url = "tags/"
                 title = "Tagar"
                 weight = 2
             [[languages.id.menu.main]]
                 identifier = "about"
-                pre = "<i class='fas fa-user fa-fw'></i>"
-                post = ""
                 name = "Tentang"
                 url = "about/"
                 title = "Tentang"
                 weight = 3
             [[languages.id.menu.main]]
                 identifier = ""
-                pre = "<i class='fas fa-tv fa-fw'></i>"
-                post = ""
                 name = "Rilisan"
                 url = "https://shigoto.n4o.xyz/"
                 title = "Rilisan"
@@ -57,7 +49,6 @@ enableEmoji = true
                 avatarURL = "/images/avatar.png"
                 title = "N4O Blog"
                 subtitle = "Seseorang yang<s> melakukan fansubbing</s> jatuh ke Neraka VTuber."
-                typeit = true
                 social = true
                 disclaimer = ""
             [languages.id.params.home.posts]
@@ -81,32 +72,24 @@ enableEmoji = true
         [languages.en.menu]
             [[languages.en.menu.main]]
                 identifier = "posts"
-                pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
-                post = ""
                 name = "Posts"
                 url = "posts/"
                 title = "Posts"
                 weight = 1
             [[languages.en.menu.main]]
                 identifier = "tags"
-                pre = "<i class='fas fa-hashtag fa-fw'></i>"
-                post = ""
                 name = "Tags"
                 url = "tags/"
                 title = "Tags"
                 weight = 2
             [[languages.en.menu.main]]
                 identifier = "about"
-                pre = "<i class='fas fa-user fa-fw'></i>"
-                post = ""
                 name = "About"
                 url = "about/"
                 title = "About"
                 weight = 3
             [[languages.en.menu.main]]
                 identifier = ""
-                pre = "<i class='fas fa-tv fa-fw'></i>"
-                post = ""
                 name = "Release"
                 url = "https://shigoto.n4o.xyz/"
                 title = "Release"
@@ -136,7 +119,7 @@ enableEmoji = true
             Trakteer = "noaione"
 
 [params]
-    version = "1.3.X"
+    version = "2.0.X"
     defaultTheme = "dark"
     gitRepo = "https://github.com/noaione/n4o-blog-web"
     images = ["/assets/logo.png"]
